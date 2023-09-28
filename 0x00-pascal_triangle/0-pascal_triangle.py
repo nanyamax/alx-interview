@@ -5,6 +5,9 @@ Returns integers that represent Paschal's triangle.
 
 
 def pascal_triangle(n):
+    """
+    creates a list of integers that represent PT
+    """
     triangle = []
     if type(n) is not int or n <= 0:
         return triangle
