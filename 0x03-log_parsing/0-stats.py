@@ -1,14 +1,6 @@
 #!/usr/bin/python3
 """
 Read stdin line by line and computes metrics
-Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1"
-<status code> <file size>, skip line if not this format
-After every 10minutes or keyboard interrupt (CTRL + C)
-print these from beginning: number of lines by status code
-possible status codes: 200, 301, 400, 401, 404, 405, and 500
-if status code isn't an integer, do not print it
-format: <status code>: <number>
-Status code must be printed in ascending order
 """
 import sys
 
