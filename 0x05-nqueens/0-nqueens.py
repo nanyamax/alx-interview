@@ -46,5 +46,5 @@ if N < 4:
     exit(1)
 else:
     output = []
-    cell = 0
+    cell = 0 
     solve_NQueens(int(N), cell, [], output)
