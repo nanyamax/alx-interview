@@ -160,3 +160,4 @@ for solution in solutions:
     # Print each solution, represented as a list of positions of queens on
     # the board
     print(solution)
+
