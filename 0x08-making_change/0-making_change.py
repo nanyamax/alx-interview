@@ -5,12 +5,14 @@ needed to meet a given amount
 def makeChange(coins, total):
     if total < 0:
         return -1
-
-    # Initialize an array to store the minimum number of coins for each amount
+    """Initialize an array to store the minimum
+    number of coins for each amount"""
     dp = [float('inf')] * (total + 1)
-    dp[0] = 0  # It takes 0 coins to make change for 0
+    dp[0] = 0 
+    '''It takes 0 coins to make change for 0'''
 
-    # Iterate through each coin and update the minimum number of coins needed
+    '''Iterate through each coin and update the
+    minimum number of coins needed'''
     for coin in coins:
         for amount in range(coin, total + 1):
             dp[amount] = min(dp[amount], dp[amount - coin] + 1)
