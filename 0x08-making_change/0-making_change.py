@@ -5,8 +5,8 @@ needed to meet a given amount
 
 
 def makeChange(coins, total):
-    if total < 0:
-        return -1
+    if total <= 0:
+        return 0
     
     """Initialize an array to store the minimum
     number of coins for each amount"""
