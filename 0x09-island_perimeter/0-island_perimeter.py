@@ -4,11 +4,13 @@
 
 
 def island_perimeter(grid):
-    perimeter = 0
-    if type(grid) != list:
-        return 0
-    n = len(grid)
-    for i, row in enumerate(grid):
+     """Computes the perimeter of an island with no lakes.
+    """
+     perimeter = 0
+     if type(grid) != list:
+         return 0
+     n = len(grid)
+     for i, row in enumerate(grid):
         m = len(row)
         for j, cell in enumerate(row):
             if cell == 0:
@@ -20,4 +22,4 @@ def island_perimeter(grid):
                 j == 0 or row[j - 1] == 0,
             )
             perimeter += sum(edges)
-    return perimeter
+        return perimeter
